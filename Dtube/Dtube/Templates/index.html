@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label for="url">Input url for download:</label>   
+        <input type="url" name="url" id="url" required>
+        <button type="submit">Download</button>
+    </form>
+</body>
+</html>
